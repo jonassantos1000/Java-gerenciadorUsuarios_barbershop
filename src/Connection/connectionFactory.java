@@ -13,7 +13,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
-
 /**
  *
  * @author Jonas Santos
@@ -24,6 +23,7 @@ public class connectionFactory {
     private static String getDataSource(){
         String path = "C:\\conatus\\parameters\\datasource.ini";
         String teste=null;
+        teste=null;
         try(BufferedReader br = new BufferedReader(new FileReader(path))){
             String line=null;
             line = br.readLine();
@@ -37,25 +37,24 @@ public class connectionFactory {
         }
         return null;
     }
-    
-    
+       
     public static Connection getconnection(){
         try{
             if(conexao==null){
                 Class.forName("org.firebirdsql.jdbc.FBDriver"); 
                 String criptografia="?encoding=ISO8859_1";
-                String diretorioBase=getDataSource();
+                String Base=getDataSource();
                 conexao= DriverManager.getConnection(
-                    "jdbc:firebirdsql:127.0.0.1/3050:"+diretorioBase+criptografia,
+                    "jdbc:firebirdsql:"+Base+criptografia,
                     "SYSDBA", "masterkey");
             }
             
             return conexao;
         }
         catch (ClassNotFoundException cnfe) {
-            JOptionPane.showMessageDialog(null, "Erro no driver JBDC");
-            System.exit(0);
-            return null;
+                JOptionPane.showMessageDialog(null, "Erro no driver JBDC");
+                System.exit(0);
+                return null;
             }
         catch(SQLException SQLex){
             SQLex.printStackTrace();
