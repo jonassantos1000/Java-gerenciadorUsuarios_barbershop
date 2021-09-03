@@ -21,7 +21,7 @@ public class connectionFactory {
     private static Connection conexao;
     
     private static String getDataSource(){
-        String path = "C:\\conatus\\parameters\\datasource.ini";
+        String path = "C:\\Program Files (x86)\\Conatus\\parameters\\datasource.ini";
         String teste=null;
         teste=null;
         try(BufferedReader br = new BufferedReader(new FileReader(path))){
