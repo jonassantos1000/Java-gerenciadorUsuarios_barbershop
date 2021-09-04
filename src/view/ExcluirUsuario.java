@@ -80,7 +80,7 @@ public class ExcluirUsuario extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(gridBusca);
 
-        BuscarUsuario.getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 91, 253, 147));
+        BuscarUsuario.getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 91, 300, 147));
 
         btCancelar1.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         btCancelar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/botaocancelar6.png"))); // NOI18N
@@ -94,7 +94,7 @@ public class ExcluirUsuario extends javax.swing.JFrame {
                 btCancelar1ActionPerformed(evt);
             }
         });
-        BuscarUsuario.getContentPane().add(btCancelar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 256, 100, 40));
+        BuscarUsuario.getContentPane().add(btCancelar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 100, 40));
 
         Selecionar.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         Selecionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/botaoefetivar5.png"))); // NOI18N
@@ -108,7 +108,7 @@ public class ExcluirUsuario extends javax.swing.JFrame {
                 SelecionarActionPerformed(evt);
             }
         });
-        BuscarUsuario.getContentPane().add(Selecionar, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 256, 116, 40));
+        BuscarUsuario.getContentPane().add(Selecionar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, 116, 40));
 
         lbTitulo.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         lbTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -127,7 +127,7 @@ public class ExcluirUsuario extends javax.swing.JFrame {
                 btBuscarActionPerformed(evt);
             }
         });
-        BuscarUsuario.getContentPane().add(btBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, 110, 40));
+        BuscarUsuario.getContentPane().add(btBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 110, 40));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
