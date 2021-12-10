@@ -331,13 +331,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
     
     private void bloquearAcesso(){
+        txtLogin.setEnabled(true);
+        txtSenha.setEnabled(true);
         btIncluir.setEnabled(false);
         btAlterar.setEnabled(false);
         btExcluir.setEnabled(false);
         btLogar.setSelected(false);
+        txtLogin.requestFocus(true);
     }
     
     private void liberarAcesso(){
+        txtLogin.setEnabled(false);
+        txtSenha.setEnabled(false);
         btIncluir.setEnabled(true);
         btAlterar.setEnabled(true);
         btExcluir.setEnabled(true);
